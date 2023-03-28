@@ -14,18 +14,18 @@ scan.
 
 The environment has to support Python 3.6 or higher and the following Python module
 
-$ pip install argparse
-$ pip install bs4
-$ pip install prettytable
+    $ pip install argparse
+    $ pip install bs4
+    $ pip install prettytable
 
 ### How to run the scan? ###
 
 To start the scan, make sure you have all hoster website urls in "input/hosters.csv" including the name and a hosterId of this hoster.
 
-$ ./check_hosting_products.py --help
-$ ./check_hosting_products.py --list-hosters
-$ ./check_hosting_products.py --list-products
-$ ./check_hosting_products.py --start-at 100 --stop-at 199 --max-depth 10
+    $ ./check_hosting_products.py --help
+    $ ./check_hosting_products.py --list-hosters
+    $ ./check_hosting_products.py --list-products
+    $ ./check_hosting_products.py --start-at 100 --stop-at 199 --max-depth 10
 
 ### Contribution guidelines ###
 

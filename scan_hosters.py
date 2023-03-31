@@ -64,6 +64,9 @@ BLOCKED_HOSTER_URLS = ('https://www.akamai.com', 'https://www.cloudflare.com', '
 def unifyurl(url: str):
     return url.strip().split('?')[0].split('#')[0].rstrip('/').lower()
 
+def domain(url: str):
+    return url.replace('https://', '').replace('http://', '').split('/')[0]
+
 # Number of links to crawl (default = 30)
 num_links_to_crawl = args.max_depth
 debug = args.debug
@@ -103,20 +106,38 @@ if os.path.exists(BLOCKED_URL_ENDINGS_FILE):
 
 # Load list of hosting companies and their URLs from CSV file
 # Exclude entries without a url and hosters that are on the block list
+hosters = []
+hoster_dict = {} # hoster_dict contains all hoster entries with the hoster id as key
+urls_added = set()
 with open(HOSTERS_CSV, 'r') as csvfile:
     reader = csv.reader(csvfile)
-    hosters = [(row[0], row[1], row[2]) for row in reader if row[2].startswith(URL_BEGINNING) and row[2].strip().rstrip('/').lower() not in BLOCKED_HOSTER_URLS]
+    for row in reader:
+        hoster_id = row[0].strip().lower()
+        hoster_name = row[1].strip()
+        hoster_url = row[2].strip().rstrip('/').lower()
+        if hoster_url.startswith(URL_BEGINNING) \
+            and hoster_url not in BLOCKED_HOSTER_URLS \
+            and hoster_url not in urls_added:
 
-# hoster_dict contains all hoster entries with the hoster id as key
-hoster_dict = {}
-for hoster in hosters:
-    hoster_dict[hoster[0]] = hoster[1]
+            if not hoster_id:
+                hoster_id = domain(hoster_url).replace('.', '')
+            if not hoster_name:
+                hoster_name = domain(hoster_url).replace('www.', '')
+
+            hosters.append([hoster_id, hoster_name, hoster_url])
+            hoster_dict[hoster_id] = hoster_name
+            urls_added.add(hoster_url)
+
+num_hosters = len(hosters)
 
 # Print list of hosters if --list-hosters and exit
 if args.list_hosters:
     for i, hoster in enumerate(hosters):
         if i >= start_at and i <= stop_at:
-            print(hoster[1], '(', hoster[2], ')')
+            print(hoster[1], '(' + hoster[2] + ')')
+
+    print()
+    print('{:>7,}'.format(num_hosters), 'hosters imported from', HOSTERS_CSV)
     exit()
 
 # products is a string list containing only the official name of each product
@@ -167,6 +188,9 @@ if args.list_products:
             else:
                 print(product, '(' + ', '.join(variations).rstrip(', ') + ')')
 
+    print()
+    print('{:>7,}'.format(len(products)), 'products in', PRODUCTS_CSV)
+    print('{:>7,}'.format(len(keywords)), 'search terms for those products in total')
     exit()
 
 # Initialize dictionary and counters to store results
@@ -433,7 +457,6 @@ print(table)
 print()
 
 # Calculate percentage values
-num_hosters = len(hosters)
 if num_hosters > 0 and num_hosters_checked > 0 and num_hosters_with_products > 0:
     perc_hosters_checked = '{:.1%}'.format(num_hosters_checked / num_hosters)
     perc_hosters_with_products = '{:.1%}'.format(num_hosters_with_products / num_hosters_checked)

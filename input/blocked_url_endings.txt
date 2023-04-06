@@ -70,5 +70,6 @@
 /unternehmen
 /warenkorb
 /wiki
+/wp-admin
 /wp-admin/edit.php
 /wp-login.php

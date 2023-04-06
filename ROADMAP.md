@@ -3,9 +3,12 @@
 ## NEXT DELIVERIES
 
 * allow multiple mentions of keywords belonging to multiple products in "products.csv", e.g. "Weebly" belonging to "Website Builder" and "Weebly" to allow building trees
-* log all urls containing keywords with the keywords listed: url,keyword1,keyword2,...
 
 ## DELIVERED
+
+### 2023-04-02
+
+* log all urls containing keywords with the keywords listed: url,keyword1,keyword2,...
 
 ### 2023-03-27
 

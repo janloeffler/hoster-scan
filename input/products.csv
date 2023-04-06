@@ -1,42 +1,69 @@
 247Cloud
 360 Monitoring,360Monitoring,Monitoring360,Monitoring 360
-Acronis,Acronis Cyber Protection,Acronis Cloud Backup
-Agency Hosting,Agency Services
+Acronis,Acronis Cyber Protect,Acronis Cyber Protection,Acronis Cloud Backup
+Agency Hosting,Agency Service
+AI Technology,by AI,AI driven,AI powered,Artificial Intelligence,Künstliche Intelligenz
 AlmaLinux
+Atomic Secured Linux
+AWS,Amazon Webservices,Amazon Web Services
 BaseKit
+Billing Automation
+Bitnami
+BitNinja
 Blesta
+Business Email,Premium Email
+CDN,Content Delivery Network
 CentMin
-CentOS Web Panel
+CentOS Web Panel,CentOS WebPanel
+ChatGPT,Chat-GPT,OpenAI
+ClamAV
 Clara Cloud
 Cloud Hosting
+Cloud Service Provider
+Cloudbric
 CloudFlare
 CloudLinux
 CloudStack
 CM4all
 Codeguard
+CodeGuard
 ConfigServer eXploit Scanner
 Confixx
 cPanel
 CyberPanel
-Dedicated Server,Bare Metal,Rootserver
+Dedicated Server,Bare Metal,Rootserver,Root Server
+digicert
+Digital Agency
 DirectAdmin,Direct Admin
 DNSmanager
 Docker
+Dropmysite
+Dropsuite
 duda
 Ecwid
+Elementor
+Email Marketing
+Extendify
 Fantastico
 FASTPANEL
 Ferozo
 froxlor
 Future Web 3
+Google Cloud
 Google Workspace,G Suite
+Grafana
 GravityCube
 Hepsia Control Panel
+HostBill
+Hosting
+Hosting Automation
 HSphere Control Panel
 Hyper-V,HyperV
 HyperVM
-Imunify360,Immunify360
-ImunifyAV,ImmunifyAV
+IaaS
+Imunify360,Immunify360,Imunify 360,Immunify 360
+ImunifyAV,ImunifyAV+,ImmunifyAV,Imunify AV,Immunify AV
+InfiniteWP
 Installatron
 Interworx
 ISPConfig
@@ -44,49 +71,72 @@ ISPmanager
 Jelastic
 JetBackup
 Jetpack
+Joomla! Toolkit,Joomla Toolkit
+Kaspersky
 KernelCare
 KeyHelp
 Kloxo
 koality
+kolab
 konsoleH
 Kopage
 Kubernetes,k8s
 KVM
 Let's Encrypt,Lets Encrypt,LetsEncrypt
-Litespeed
+LiteSpeed
 LiveConfig
+LogicBoxes
 LSCache
 LXC
 MaestroPanel
 MagicSpam
 MailChannels
+MainWP
+Managed Hosting
+Managed WordPress
+MariaDB
 Marketgoo
+Memcached,Memcache
 Microsoft 365,Microsoft365,Office 365
+Microsoft Azure,Azure
+Microweber
 my.cyon
 myhostadmin
+MySQL
 MyZone
-NewRelic
-Nextcloud
+NewRelic,New Relic
+NextCloud
 Nixstats
+NordVPN
 OnApp
 OnePanel
-Open-Xchange,OpenXchange,OX App Suite
+Open-Xchange,OpenXchange,OX App Suite,OX Cloud
+OpenSRS
 OpenStack
 OpenVZ
+PaaS
 Pagoda Panel
 Patchman
+Patchstack
+Pinguzo
 Plesk,Plesk Obsidian,Plesk Onyx,Plesk 12,Parallels Plesk
+Plex Media Server Management,Plex Media,Plex Software,Plex Stream
 Proxmox
 PRTG
 R1Soft
 rankingCoach,rankingCoach 360,marketingRadar
+RBL Check
+Redis
+Reseller Hosting,Reseller Plans
+RushFiles
+SaaS
 SemRush
-SEO Service
+SEO Service,SEO Plans
 SEO Tool
 SEO Toolkit
-ServerPilot
 Server Monitoring
-Shared Hosting,Shared Web Hosting,Shared Webhosting,Hospedagem de Sites
+ServerPilot
+Shared Hosting,Shared Web Hosting,Shared Webhosting,Hospedagem de Sites,cPanel Web Hosting,cPanel Webhosting
 Simple SEO
 Site.pro
 Site24x7
@@ -94,6 +144,7 @@ Sitejet
 SiteLock
 SitePad
 SitePanel
+Siteplus
 SiteWit
 Sitewiz
 Smart Updates
@@ -102,37 +153,53 @@ SohoLaunch
 SolidCP
 SolusVM,SolusIO
 Solvinity
+Sophos
 SpamExperts,Spam Experts
 SPanel
+Speed Kit
+Squarespace
 StackCP
+Sucuri
 SuperCloud panel
 TeamSpeak
 Titan,Titan Mail,Flock
 Ubersmith
+Upmind
 UptimeRobot
-Uptime Monitoring,Monitoramento e Uptime
 Veeam
 Vepp
 VestaCP
 Virtualizor
 VirtualMin
-Virtuozzo
+Virtuozzo,VzLinux,PSBM
+VirusTotal
 VMmanager
 VMware,VSphere
 VPS,Virtual Private Server,Virtual Server,Cloud Server
+Web Agency,Webagency,Webagentur,Web Agentur
+Web Design Service,Webdesign Service
+Web Hosting,Webhosting
 Web Presence Builder
 Webmin
+WebPros
 Website Builder,Site Builder,Sitebuilder,Homepage Baukasten,Webseitenbaukasten,Criadores de Sites
+Website Monitoring,Site Monitoring,Uptime Monitoring,Monitoramento e Uptime
 WebSitePanel
 Webuzo
 Weebly
-WHMCS
+WHMCS,WHMCMS,WHCMS
+WHOIS
+Windows Hosting,Windows Web Hosting
+Wix.com
 WooCommerce
 WordPress Hosting,Hospedagem WordPress
 WP Toolkit,WordPress Toolkit
+WPCentral
 XEN
 XOVI,XOVI NOW
 YEXT
 Yoast,Yoast SEO
 Zabbix
+Zimbra Email,Zimbra
+Zoho Mail
 ZPanel

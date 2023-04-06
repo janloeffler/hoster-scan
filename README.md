@@ -8,9 +8,9 @@ Product name variations are supported to find also websites that use different w
 
 ### Requirements ###
 
-To run the Hoster Scan it is recommended to use a spare server and keep the process running (use "screen -r" to recover a session) since
-depending on the input list of hosting companies and the crawl depth (number of subpages) it can take many hours to days to complete the
-scan.
+To run the Hoster Scan it is recommended to use a spare server and keep the process running (use "screen -S scan" to start and "screen -r scan"
+to recover a session) since depending on the input list of hosting companies and the crawl depth (number of subpages) it can take many
+hours to days to complete the scan.
 
 The environment has to support Python 3.6 or higher and the following Python module
 
